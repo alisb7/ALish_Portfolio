@@ -73,7 +73,7 @@ a:hover{
     text-decoration-color: (181, 181, 181);
 }
 .logo{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .logo:hover{
     cursor: default;
@@ -313,7 +313,7 @@ h4{
     width: 50px;
     position: absolute;
     right: 1rem;
-    bottom: -20rem;
+    bottom: -5rem;
     cursor: pointer;
 }
 .Details_container{
@@ -380,7 +380,9 @@ h4{
 }
 
 #read-more-toggle:checked ~ .read-more-content {
-    max-height: 500px; /* Adjust as needed to show the full content */
+    max-height: 500px; 
+    transition: max-height 0.5s ease-in;
+    margin-bottom: 2rem;
 }
 
 #read-more-toggle {
@@ -394,10 +396,52 @@ h4{
     font-weight: bold;
     margin-left: 0.5rem; 
 }
+/* experience section */
 #experience{
+    position: relative;
+    margin-top: 19rem;
     
+}
+.experience_details_container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 
 }
+.icon_arrow2{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 1rem;
+    bottom: -10rem;
+    cursor: pointer;
+}
+.experience_subtitle{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size:2rem;
+    margin-bottom: 2rem;
+    
+}
+.About_container{
+    justify-content: center;
+    flex-direction: column;
+}
+.experience_details_container,.About_container{
+    display: flex;
+}
+.Details_containers1{
+    padding: 1.5rem;
+    flex: 1;
+    background:antiquewhite;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(53, 53, 53);
+    border-color: rgb(163, 163, 163);
+    text-align: left;
+    margin: 1rem;
+}
+
+
 
 
 
