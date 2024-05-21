@@ -481,7 +481,27 @@ h4 {
     width: 50px;
     cursor: pointer;
     margin-top: 2rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   position:absolute;
+   right: 1rem;
+   bottom: -3rem;
 }
+.cisco{
+    height: 200px;
+    width: 200px;
+   margin-left: 50px;
+}
+.networking-container {
+    display: flex;
+    align-items: center;
+}
+
+.networking {
+    margin-right: -200px; 
+}
+.arrow4{
+    transform: rotate(-90deg);
+    height: 100px;
+    width: 100px;
+    margin-left: 200px;
+}
+
