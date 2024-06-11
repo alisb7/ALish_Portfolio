@@ -686,8 +686,41 @@ p1 {
 .contact_btn1:hover{
     background-color: #005582; 
 }
-
-
+.btn_color_3 a{
+    background-color: #333;
+    text-decoration: white;
+}
+.btn_color_3 {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+  }
+  
+  .btn_color_3:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  .btn_color_3:active {
+    background-color: #333;
+    transform: scale(1);
+  }
+  
+  .btn_color_3:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contact_btn1 a {
+    color: white;
+    text-decoration: none;
+  }
+  
 
 
 
