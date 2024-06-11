@@ -1,191 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com
+    /ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
     <nav id="desktop_nav">
-        <div class="logo">Alish Bhattarai</div>
-        <div>
-            <ul class="nav_links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experiences</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Alish Bhattarai</div>
+      <div>
+        <ul class="nav_links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experiences</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger_nav">
-        <div class="logo">Alish Bhattarai</div>
-        <div class="hamburger_menu">
-            <div class="hamburger_icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu_links">
-                <li><a href="#about" onclick="togglemenu()">About</a></li>
-                <li><a href="#experience" onclick="togglemenu()">Experiences</a></li>
-                <li><a href="#Projects" onclick="togglemenu()">Projects</a></li>
-                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
-
-            </div>
+      <div class="logo">Alish Bhattarai</div>
+      <div class="hamburger_menu">
+        <div class="hamburger_icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu_links">
+          <li><a href="#about" onclick="togglemenu()">About</a></li>
+          <li><a href="#experience" onclick="togglemenu()">Experiences</a></li>
+          <li><a href="#Projects" onclick="togglemenu()">Projects</a></li>
+          <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/about-pic.jpg" id="my_image1" alt="Alish_profile_picture">
+      <div class="section_pic-container">
+        <img
+          src="./assets/about-pic.jpg"
+          id="my_image1"
+          alt="Alish_profile_picture"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="section_text_p2">Alish Bhattarai</h1>
+        <h4>An IT Student</h4>
+        <div class="btn_container">
+          <button
+            class="btn_color_1"
+            onclick="window.open('./assets/Alish resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn_color_2" onclick="location.href=('#contact')">
+            Contact
+          </button>
         </div>
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="section_text_p2">Alish Bhattarai</h1>
-            <h4>An IT Student</h4>
-            <div class="btn_container">
-                <button class="btn_color_1" onclick="window.open('./assets/Alish resume.pdf')">Download CV</button>
-                <button class="btn_color_2" onclick="location.href=('#contact')">Contact</button>
-            </div>
-            <div id="socials_container">
-                <img src="./Assets/linkedin.png" alt="linkedin.png" class="icon" onclick="location.href='https://www.linkedin.com/in/alish-bhattarai-3a8b142a5/'">
-                <img src="./Assets/github.png" alt="github.png" class="icon" onclick="location.href='https://github.com/alisb7/ALish_Portfolio.git'">
-            </div>
+        <div id="socials_container">
+          <img
+            src="./Assets/linkedin.png"
+            alt="linkedin.png"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/alish-bhattarai-3a8b142a5/'"
+          />
+          <img
+            src="./Assets/github.png"
+            alt="github.png"
+            class="icon"
+            onclick="location.href='https://github.com/alisb7/ALish_Portfolio.git'"
+          />
         </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section_text_p1">Get to Know More</p>
-        <h1 class="section_text_p2">About Me</h1>
-        <div class="section_container">
-            <div class="section_pic_about_container">
-                <img src="./Assets/profile-pic-2.jpg" class="about_pic">
-            </div>
-            <div class="about_details_container">
-                <div class="about_containers">
-                    <div class="Details_container">
-                        <img src="./Assets/experience.png" alt="Experience_icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>6 months<br>Social Media Co-ordinator<br>1.5+ years<br>McDonald's Australia<br>3 months<br>Store Person</p>
-                    </div>
-                    <div class="Details_container">
-                        <img src="./Assets/education.png" alt="Education_icon" class="icon">
-                        <h3>Education</h3>
-                        <p>Bachelor of Engineering in Information Technology (1 year)<br>Bachelor of Information Technology</p>
-                    </div>
-                    <div class="Details_container">
-                        <img src="./Assets/code.png" alt="Coding_icon" class="icon">
-                        <h3>Skills</h3>
-                        <p>
-                            <i class="devicon-c-plain-wordmark"></i> Programming in C<br>
-                            <i class="devicon-cplusplus-plain"></i> OOP in C++<br>
-                            <i class="devicon-python-plain"></i> Python<br>
-                            <i class="devicon-javascript-plain"></i> JavaScript<br>
-                            <i class="devicon-csharp-plain-wordmark colored"></i> OOP in C#<br>
-                            <i class="devicon-html5-plain-wordmark"></i> HTML<br>
-                            <i class="devicon-css3-plain"></i> CSS<br> 
-                        </p> 
-                    </div>
-                </div>
-                <div class="networking-container">
-                    <div class="networking">
-                        <h1>Networking and security</h1>
-                    </div>
-                    <img src="./Assets/arrow.png"class="arrow4"/>
-                    <img src="./Assets/cisco.png" alt="Cisco logo" class="cisco"/>
-                </div>
-                <div class="text_container">
-                    <p>Welcome to my portfolio!<br>I am a dedicated and passionate individual with a strong foundation in HTML, CSS, C programming, object-oriented programming, Python, and C#. My technical expertise is complemented by my commitment to continuous learning and improvement, ensuring that I stay updated with the latest industry trends and best practices.</p>
-                    <input type="checkbox" id="read-more-toggle">
-                    <label for="read-more-toggle" class="read-more-label">Read More</label>
-                    <div class="read-more-content">
-                        <p>As an aspiring intern, I am eager to bring my skills to a dynamic company where I can contribute to meaningful projects and gain valuable hands-on experience. My coursework and personal projects have equipped me with a deep understanding of software development principles and practical problem-solving abilities.</p>
-                        <p>Beyond my technical skills, I have demonstrated leadership in various group projects and extracurricular activities. My ability to lead and collaborate effectively has been key to successfully completing complex tasks and driving team success. I am known for my proactive approach, attention to detail, and strong communication skills, which I believe are essential for thriving in any professional environment.</p>
-                        <p>I am excited about the opportunity to apply my knowledge and enthusiasm in a real-world setting and to contribute positively to your organization. Let's work together to achieve great things!</p>
-                    </div>
-                </div>
-            </div>
+      <p class="section_text_p1">Get to Know More</p>
+      <h1 class="section_text_p2">About Me</h1>
+      <div class="section_container">
+        <div class="section_pic_about_container">
+          <img src="./Assets/profile-pic-2.jpg" class="about_pic" />
         </div>
-        <img src="./Assets/arrow.png" alt="Arrow.png" class="icon_arrow" onclick="location.href='#experience'" />
+        <div class="about_details_container">
+          <div class="about_containers">
+            <div class="Details_container">
+              <img
+                src="./Assets/experience.png"
+                alt="Experience_icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                6 months<br />Social Media Co-ordinator<br />1.5+ years<br />McDonald's
+                Australia<br />3 months<br />Store Person
+              </p>
+            </div>
+            <div class="Details_container">
+              <img
+                src="./Assets/education.png"
+                alt="Education_icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelor of Engineering in Information Technology (1 year)<br />Bachelor
+                of Information Technology
+              </p>
+            </div>
+            <div class="Details_container">
+              <img src="./Assets/code.png" alt="Coding_icon" class="icon" />
+              <h3>Skills</h3>
+              <p>
+                <i class="devicon-c-plain-wordmark"></i> Programming in C<br />
+                <i class="devicon-cplusplus-plain"></i> OOP in C++<br />
+                <i class="devicon-python-plain"></i> Python<br />
+                <i class="devicon-javascript-plain"></i> JavaScript<br />
+                <i class="devicon-csharp-plain-wordmark colored"></i> OOP in
+                C#<br />
+                <i class="devicon-html5-plain-wordmark"></i> HTML<br />
+                <i class="devicon-css3-plain"></i> CSS<br />
+              </p>
+            </div>
+            <img
+              src="./Assets/arrow.png"
+              alt="Arrow.png"
+              class="icon_arrow4"
+              onclick="location.href='#experience'"
+            />
+          </div>
+          <div class="networking-container">
+            <div class="networking">
+              <h1>Networking and security</h1>
+            </div>
+            <img src="./Assets/arrow.png" class="arrow4" />
+            <img src="./Assets/cisco.png" alt="Cisco logo" class="cisco" />
+          </div>
+          <div class="text_container">
+            <p>
+              Welcome to my portfolio!<br />I am a dedicated and passionate
+              individual with a strong foundation in HTML, CSS, C programming,
+              object-oriented programming, Python, and C#. My technical
+              expertise is complemented by my commitment to continuous learning
+              and improvement, ensuring that I stay updated with the latest
+              industry trends and best practices.
+            </p>
+            <input type="checkbox" id="read-more-toggle" />
+            <label for="read-more-toggle" class="read-more-label"
+              >Read More</label
+            >
+            <div class="read-more-content">
+              <p>
+                As an aspiring person, I am eager to bring my skills to a
+                dynamic company where I can contribute to meaningful projects
+                and gain valuable hands-on experience. My coursework and
+                personal projects have equipped me with a deep understanding of
+                software development principles and practical problem-solving
+                abilities.
+              </p>
+              <p>
+                Beyond my technical skills, I have demonstrated leadership in
+                various group projects and extracurricular activities. My
+                ability to lead and collaborate effectively has been key to
+                successfully completing complex tasks and driving team success.
+                I am known for my proactive approach, attention to detail, and
+                strong communication skills, which I believe are essential for
+                thriving in any professional environment.
+              </p>
+              <p>
+                I am excited about the opportunity to apply my knowledge and
+                enthusiasm in a real-world setting and to contribute positively
+                to your organization. Let's work together to achieve great
+                things!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="section_text_p2">Experience</h1>
-        <div class="experience_details_container">
-            <div class="About_container">
-                <div class="Details_containers1">
-                    <h2 class="experience_subtitle">Frontend Development</h2>
-                    <div class="article_container">
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="section_text_p2">Experience</h1>
+      <div class="experience_details_container">
+        <div class="About_container">
+          <div class="Details_containers1">
+            <h2 class="experience_subtitle">Frontend Development</h2>
+            <div class="article_container">
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
-            </div>
-            <div class="About_container">
-                <div class="Details_containers1">
-                    <h2 class="experience_subtitle">Backend Development</h2>
-                    <div class="article_container">
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>Programming in C</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>OOP in C++</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>OOP in C#</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="checkmark.png" class="icon" />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
+          </div>
         </div>
-        <img src="./Assets/arrow.png" alt="Arrow.png" class="icon_arrow2" onclick="location.href='#Projects'" />
+        <div class="About_container">
+          <div class="Details_containers1">
+            <h2 class="experience_subtitle">Backend Development</h2>
+            <div class="article_container">
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming in C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>OOP in C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>OOP in C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="checkmark.png"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow.png"
+        class="icon_arrow2"
+        onclick="location.href='#Projects'"
+      />
     </section>
+    <section id="Projects">
+      <p class="section_text_p1">Browse My all</p>
+      <h1 class="section_text_p2">Projects</h1>
+      <div class="experience_details_container project_container">
+        <div class="details_container color_container">
+          <div class="artice_container">
+            <img
+              src="./Assets/websites.jpeg"
+              alt="projects"
+              class="projects_img"
+            />
+          </div>
+          <h2 class="experience_subtitle project_title">Website Design</h2>
+          <div class="btn_container">
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                                 'https://github.com/alisb7/ALish_Portfolio.git'"
+            >
+              Github
+            </button>
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                                 'https://github.com/alisb7/ALish_Portfolio.git'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details_container color_container">
+          <div class="artice_container">
+            <img
+              src="./Assets/console.jpeg"
+              alt="projects"
+              class="projects_img"
+            />
+          </div>
+          <h2 class="experience_subtitle project_title">Console Application</h2>
+          <div class="btn_container">
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                                   'https://github.com/alisb7/Csharp_1st.git'"
+            >
+              Github
+            </button>
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                               'https://github.com/alisb7/ALish_Portfolio.git'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details_container color_container">
+          <div class="artice_container">
+            <img
+              src="./Assets/project-1.png"
+              alt="projects"
+              class="projects_img"
+            />
+          </div>
+          <h2 class="experience_subtitle project_title">project 3</h2>
+          <div class="btn_container">
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                                   'https://github.com/alisb7/Csharp_1st.git'"
+            >
+              Github
+            </button>
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                               'https://github.com/alisb7/ALish_Portfolio.git'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details_container color_container">
+          <div class="artice_container">
+            <img
+              src="./Assets/project-2.png"
+              alt="projects"
+              class="projects_img"
+            />
+          </div>
+          <h2 class="experience_subtitle project_title">project 4</h2>
+          <div class="btn_container">
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                                   'https://github.com/alisb7/Csharp_1st.git'"
+            >
+              Github
+            </button>
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                               'https://github.com/alisb7/ALish_Portfolio.git'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <!-- <div class="details_container color_container">
+          <div class="artice_container">
+            <img
+              src="./Assets/project-3.png"
+              alt="projects"
+              class="projects_img"
+            />
+          </div>
+          <h2 class="experience_subtitle project_title">Project 5</h2>
+          <div class="btn_container">
+            <button
+              class="btn_color_2 project_btn"
+              onclick="location.href=
+                                   'https://github.com/alisb7/Csharp_1st.git'"
+            >
+              Github
+            </button>
+            <button
+            class="btn_color_2 project_btn"
+            onclick="location.href=
+                               'https://github.com/alisb7/ALish_Portfolio.git'"
+          >
+            Live Demo
+          </button>
+          </div> -->
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow.png"
+        class="icon_arrow3"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">get to know by</p>
+      <h1 class="section_text_p2">Contact Me</h1>
+      <div class="contact_info_upper-container">
+          <div class="contact_info_container">
+              <div class="contact_info_item">
+                  <img src="./Assets/email.png" alt="email_png" class="icon1" />
+                  <button
+                  class="btn_color_2 contact_btn"
+                  onclick="location.href=
+                                     'mailto:alisbhattarai67@gmail.com'"
+                >
+                  Email
+                </button>
+                  
+              <div class="contact_info_item">
+                  <img src="./Assets/linkedin.png" 
+                  alt="linkedin.png" class="icon2" onclick="location.href='https://www.linkedin.com/in/alish-bhattarai-3a8b142a5/'" />
+                  <p>
+                    <button
+                  class="btn_color_2 contact_btn"
+                  onclick="location.href=
+                                     'https://www.linkedin.com/in/alish-bhattarai-3a8b142a5/'"
+                >
+                  linkedin
+                </button>
+                  
+                    </p>
+              </div>
+          </div>
+        </div>
+          
+  </section>
+  <p class="email">Email:Alisbhattarai67@gmail.com</p>
+  <footer>
+    <div class="container">
+        <div class="copyright">
+            <p1>Copyright &copy; 2023</p>
+        </div>
+        <div class="designed-by">
+            <p1>Designed by ALIS</p1>
+        </div>
+        <div class="social-icons">
+          <button
+          class="btn_color_2 contact_btn1"
+          onclick="location.href=
+                             'mailto:alisbhattarai67@gmail.com'"
+        >
+        
+        <a href="mailto:info@example.com">
+          <img src="./Assets/email.png" alt="Email"></a>
+        </button>
+        <button
+        class="btn_color_2 contact_btn1"
+        onclick="location.href=
+                           'https://github.com'"
+      >
+      <a href="https://github.com">
+        <img src="./Assets/github.png" alt="Github"></a>
+      </button>
+      <button
+        class="btn_color_2 contact_btn1"
+        onclick="location.href=
+                           'https://facebook.com'"
+      >
+      <a href="https://facebook.com">
+        <img src="./Assets/facebook.png  " alt="Facebook"></a>
+      </button>
+      <button
+        class="btn_color_2 contact_btn1"
+        onclick="location.href=
+                           'https://linkedin.com'"
+      >
+       <a href="https://linkedin.com">
+        <img src="./Assets/linkedin.png" alt="LinkedIn"></a>
+      </button>
+
+          
+           
+           
+           
+           
+        </div>
+    </div>
+</footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
